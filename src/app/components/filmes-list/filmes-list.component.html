@@ -1,41 +1,45 @@
 <!-- Componente responsável para exibição dos dados -->
-<div class = "container custom-container">
-  <div class = "no-data text-center" *ngIf = "Filmes.length == 0">
-      <p>Ainda não há registros armazenados na base de dados.</p>
-      <butto class= "btn btn-outline-primary" routerLink = "/create-filmes">Inserir Registro</butto>
+<div class="container-exibir">
+  <div class="no-data text-center" *ngIf="Filmes.length == 0">
+    <h1 class="h1-mensagem">Você ainda não cadastrou nenhum filme :( </h1>
+    <button class="btn-cadastro" routerLink="/create-filmes"
+      >Registre um Filme</button
+    >
   </div>
   <!--Aqui, se existirem registros, serão exibidos agora-->
-  <div *ngIf = "Filmes.length !== 0">
-      <h3 class = "mb-3 text-center">Listagem de registros da base de dados</h3>
-      <div class = "col-md-12">
-          <table class = "table table-bordered">
-              <thead>
-                  <tr>
-                      <th escope = "col">Id</th>
-                      <th escope = "col">Título</th>
-                      <th escope = "col">Gênero</th>
-                      <th escope = "col">Descrição</th>
-                      <th escope = "col">Ano de Lançamento</th>
-                      <th escope = "col">Diretor</th>
-                      <th escope = "col">Avaliação</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr *ngFor = "let x of Filmes">
-                      <td>{{ x.id }}</td>
-                      <td>{{ x.titulo }}</td>
-                      <td>{{ x.genero }}</td>
-                      <td>{{ x.descricao }}</td>
-                      <td>{{ x.anoLancamento}}</td>
-                      <td>{{ x.diretor }}</td>
-                      <td>{{ x.avaliacao }}</td>
-                      <td>
-                          <span class = "edit" routerLink = "/filmes-edit/{{ x.id }}">Editar</span>
-                          <span class = "delete" (click) = "deleteFilme(x.id)">Deletar</span>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
+  <div *ngIf="Filmes.length !== 0">
+    <h3 class="mb-3 text-center">Lista de Filmes assistidos</h3>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th escope="col">Id</th>
+            <th escope="col">Título</th>
+            <th escope="col">Gênero</th>
+            <th escope="col">Descrição</th>
+            <th escope="col">Ano de Lançamento</th>
+            <th escope="col">Diretor</th>
+            <th escope="col">Avaliação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of Filmes">
+            <td>{{ x.id }}</td>
+            <td>{{ x.titulo }}</td>
+            <td>{{ x.genero }}</td>
+            <td>{{ x.descricao }}</td>
+            <td>{{ x.anoLancamento }}</td>
+            <td>{{ x.diretor }}</td>
+            <td>{{ x.avaliacao }}</td>
+            <td>
+              <span class="edit" routerLink="/filmes-edit/{{ x.id }}"
+                >Editar</span
+              >
+              <span class="delete" (click)="deleteFilme(x.id)">Deletar</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

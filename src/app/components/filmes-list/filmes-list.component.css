@@ -1,0 +1,14 @@
+.container-exibir{
+  background-color: #333;
+}
+
+.h1-mensagem {
+  font-size: 1.75 rem;
+  color: #f3f3f3;
+}
+
+.btn-cadastro {
+  color: #ffffff;
+  background-color: #e50914;
+  border-color: #e50914;
+}
