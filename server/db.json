@@ -5,7 +5,7 @@
       "titulo": "O Exterminador do Futuro",
       "genero": "Ação",
       "descricao": "Trata-se do primeiro da franquia Terminator. Produzido por Hemdale Film Corporation, Pacific Western Productions e Cinema '84 e distribuído pela Orion Pictures, é estrelado por Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Lance Henriksen e Paul Winfield",
-      "anoLancamento": "26/10/1985",
+      "anoLancamento": "2020-07-07",
       "diretor": "James Cameron",
       "avaliacao": 8
     },
@@ -13,11 +13,29 @@
       "titulo": "Teste",
       "genero": "teste",
       "discricao": "teste",
-      "anoLancamento": "13/08/1995",
+      "anoLancamento": "1995-07-07",
       "diretor": "Teste teste",
       "avaliacao": "9",
       "id": 2,
       "descricao": "sasa"
+    },
+    {
+      "titulo": "Teste",
+      "genero": "sasasa",
+      "descricao": "fsfsdfsdfsdfsdfsfsfsfsfsd",
+      "anoLancamento": "2021-07-07",
+      "diretor": "dsds",
+      "avaliacao": 6,
+      "id": 3
+    },
+    {
+      "titulo": "kkksaksoasako",
+      "genero": "hshuashaus",
+      "descricao": "shuashausasa",
+      "anoLancamento": "2021-07-14",
+      "diretor": "dassczczx",
+      "avaliacao": 8,
+      "id": 4
     }
   ]
 }

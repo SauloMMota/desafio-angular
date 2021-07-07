@@ -4,31 +4,37 @@
       <h3 class = "mb-3 text-center">Edição de Registros</h3>
   </div>
 
-  <div class = "form-group">
-      <input type = "text" [(ngModel)] = "filmesData.titulo" class = "form-control" placeholder = "Informe o título"/>
+  <div class = "input-group mb-3">
+      <label class="control-label col-sm-2" for="titulo">Título:</label>
+      <input type = "text" id = "titulo" [(ngModel)] = "filmesData.titulo" class = "form-control" placeholder = "Informe o título"/>
   </div>
 
-  <div class = "form-group">
-      <input type = "text" [(ngModel)] = "filmesData.genero" class = "form-control" placeholder = "Informe o gênero"/>
+  <div class = "input-group mb-3">
+      <label class="control-label col-sm-2" for="genero">Gênero:</label>
+      <input type = "text" id ="genero" [(ngModel)] = "filmesData.genero" class = "form-control" placeholder = "Informe o gênero"/>
   </div>
 
-  <div class = "form-group">
-      <input type = "text" [(ngModel)] = "filmesData.descricao" class = "form-control" placeholder = "Informe a descrição"/>
+  <div class = "input-group mb-3">
+      <label class="control-label col-sm-2" for="descricao">Enrredo:</label>
+      <input type = "text" id = "descricao" [(ngModel)] = "filmesData.descricao" class = "form-control" placeholder = "Informe a descrição"/>
   </div>
 
-  <div class = "form-group">
-    <input type = "text" [(ngModel)] = "filmesData.anoLancamento" class = "form-control" placeholder = "Informe o ano de laçamento"/>
+  <div class = "input-group mb-3">
+    <label class="control-label col-sm-2" for="data">Data de Lançamento:</label>
+    <input type = "date" id = "data" [(ngModel)] = "filmesData.anoLancamento" class = "form-control" placeholder = "Informe o ano de laçamento"/>
   </div>
 
-  <div class = "form-group">
-    <input type = "text" [(ngModel)] = "filmesData.diretor" class = "form-control" placeholder = "Informe o diretor"/>
+  <div class = "input-group mb-3">
+    <label class="control-label col-sm-2" for="diretor">Diretor:</label>
+    <input type = "text" id = "diretor" [(ngModel)] = "filmesData.diretor" class = "form-control" placeholder = "Informe o diretor"/>
   </div>
 
-  <div class = "form-group">
-    <input type = "text" [(ngModel)] = "filmesData.avaliacao" class = "form-control" placeholder = "Informe a avaliação"/>
+  <div class = "input-group mb-3">
+    <label class="control-label col-sm-2" for="avaliacao">Avaliação:</label>
+    <input type = "number"  min="0" max="10"  id = "avaliacao" [(ngModel)] = "filmesData.avaliacao" class = "form-control" placeholder = "Informe a avaliação"/>
   </div>
 
-  <div class = "form-group">
-      <button class = "btn btn-success btn-lg btn-block" (click) = "updateFilme()">Atualizar Registros</button>
+  <div class = "input-group mb-3">
+      <button class = "btn btn-success btn-md btn-block" (click) = "updateFilme()">Atualizar Registros</button>
   </div>
 </div>

@@ -3,27 +3,33 @@
         <h3 class = "mb-3 text-center">Adicione um filme</h3>
 
         <div class = "input-group mb-3">
-            <input type = "text" [(ngModel)] = "filmeAdd.titulo" class = "form-control" placeholder="Informe o nome do filme"/>
+            <label class="control-label col-sm-2" for="titulo">Título:</label>
+            <input type = "text" id = "titulo" [(ngModel)] = "filmeAdd.titulo" class = "form-control" placeholder="Informe o nome do filme"/>
         </div>
 
         <div class = "input-group mb-3">
-            <input type = "text" [(ngModel)] = "filmeAdd.genero" class = "form-control" placeholder = "Informe o genero do filme"/>
-        </div>
-
-        <div>
-          <textarea class="input-group mb-3" [(ngModel)] = "filmeAdd.descricao" aria-label="Informe a descrição" placeholder = "Informe a descrição" style="resize: none"></textarea>
+            <label class="control-label col-sm-2" for="genero">Gênero:</label>
+            <input type = "text" id = "genero" [(ngModel)] = "filmeAdd.genero" class = "form-control" placeholder = "Informe o gênero do filme"/>
         </div>
 
         <div class = "input-group mb-3">
-            <input type = "text" [(ngModel)] = "filmeAdd.anoLancamento" class = "form-control" placeholder = "Informe o ano de lançamento"/>
+          <label class="control-label col-sm-2" for="descricao">Enrredo:</label>
+          <input type = "text" id = "descricao" [(ngModel)] = "filmeAdd.descricao" class = "form-control" placeholder = "Informe a descrição"/>
         </div>
 
         <div class = "input-group mb-3">
-            <input type = "text" [(ngModel)] = "filmeAdd.diretor" class = "form-control" placeholder = "Informe o diretor"/>
+            <label class="control-label col-sm-2" for="ano">Ano de Lançamento:</label>
+            <input type = "date" id = "ano" [(ngModel)] = "filmeAdd.anoLancamento" class = "form-control" placeholder = "Informe o ano de lançamento"/>
         </div>
 
         <div class = "input-group mb-3">
-            <input type = "number" [(ngModel)] = "filmeAdd.avaliacao" class = "form-control" placeholder = "Avaliação do filme"/>
+            <label class="control-label col-sm-2" for="diretor">Diretor:</label>
+            <input type = "text" id = "diretor" [(ngModel)] = "filmeAdd.diretor" class = "form-control" placeholder = "Informe o diretor"/>
+        </div>
+
+        <div class = "input-group mb-3">
+            <label class="control-label col-sm-2" for="avaliacao">Avaliação:</label>
+            <input type = "number"  min="0" max="10"  id = "avaliacao" [(ngModel)] = "filmeAdd.avaliacao" class = "form-control" placeholder = "Avaliação do filme"/>
         </div>
 
         <div class = "input-group mb-3">

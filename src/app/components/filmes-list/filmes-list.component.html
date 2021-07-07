@@ -1,5 +1,5 @@
 <!-- Componente responsável para exibição dos dados -->
-<div class="container-exibir">
+<div class="container-lg">
   <div class="no-data text-center" *ngIf="Filmes.length == 0 ">
     <h1 class="h1-mensagem">Você ainda não cadastrou nenhum filme :( </h1>
   </div>
@@ -10,7 +10,7 @@
   <div *ngIf="Filmes.length !== 0">
     <h3 class="mb-3 text-center">Lista de Filmes assistidos</h3>
     <div class="col-md-12">
-      <table class="table table-bordered">
+      <table class="table table-dark table-striped table-hover">
         <thead>
           <tr>
             <th escope="col">Id</th>
@@ -20,6 +20,7 @@
             <th escope="col">Ano de Lançamento</th>
             <th escope="col">Diretor</th>
             <th escope="col">Avaliação</th>
+            <th escope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -31,10 +32,11 @@
             <td>{{ x.anoLancamento }}</td>
             <td>{{ x.diretor }}</td>
             <td>{{ x.avaliacao }}</td>
-            <td>
-              <button class="btn btn btn-success btn-sm" routerLink="/filmes-edit/{{ x.id }}">Editar</button>
-
-              <button class="btn btn btn-danger btn-sm" (click)="deleteFilme(x.id)">Deletar</button>
+            <td >
+              <div class="btn-group">
+                <button class="btn btn btn-success btn-sm" routerLink="/filmes-edit/{{ x.id }}">Editar</button>
+                <button class="btn btn btn-danger btn-sm" (click)="deleteFilme(x.id)">Deletar</button>
+              </div>
             </td>
           </tr>
         </tbody>
