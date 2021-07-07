@@ -1,0 +1,13 @@
+{
+    "filmes": [
+      {
+        "id": 1,
+        "titulo": "O Exterminador do Futuro",
+        "genero": "Ação",
+        "descricao": "Em 2029 uma inteligência artificial chamada Skynet será criada para toda a rede de defesa americana, porém sairá de controle e irá considerar todos os humanos uma ameaça, então irá roubar todos os códigos de lançamento de todas as bombas nucleares dos Estados Unidos e lançá-las contra alvos russos, provocando uma guerra nuclear.",
+        "anoLancamento": "26/10/1984",
+        "diretor": "James Cameron",
+        "avaliacao": 8
+      } 
+    ]
+}
