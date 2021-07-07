@@ -1,10 +1,10 @@
 <!-- Componente responsável para exibição dos dados -->
 <div class="container-exibir">
-  <div class="no-data text-center" *ngIf="Filmes.length == 0">
+  <div class="no-data text-center" *ngIf="Filmes.length == 0 ">
     <h1 class="h1-mensagem">Você ainda não cadastrou nenhum filme :( </h1>
-    <button class="btn-cadastro" routerLink="/create-filmes"
-      >Registre um Filme</button
-    >
+  </div>
+  <div class="pull-right">
+    <button class="btn btn btn-primary btn-sm" routerLink="/create-filmes">Registre um Filme</button>
   </div>
   <!--Aqui, se existirem registros, serão exibidos agora-->
   <div *ngIf="Filmes.length !== 0">
@@ -32,10 +32,9 @@
             <td>{{ x.diretor }}</td>
             <td>{{ x.avaliacao }}</td>
             <td>
-              <span class="edit" routerLink="/filmes-edit/{{ x.id }}"
-                >Editar</span
-              >
-              <span class="delete" (click)="deleteFilme(x.id)">Deletar</span>
+              <button class="btn btn btn-success btn-sm" routerLink="/filmes-edit/{{ x.id }}">Editar</button>
+
+              <button class="btn btn btn-danger btn-sm" (click)="deleteFilme(x.id)">Deletar</button>
             </td>
           </tr>
         </tbody>
