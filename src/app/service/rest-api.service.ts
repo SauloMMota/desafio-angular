@@ -13,7 +13,7 @@ import { retry, catchError } from 'rxjs/operators';
 })
 
 export class RestApiService {
-  
+
   //Definindo a url do servidor
   apiURL = 'http://localhost:3000';
 
@@ -35,7 +35,7 @@ export class RestApiService {
   }
   window.alert(errorMessage);
   return throwError(errorMessage);
-}  
+}
 
   // Método get() -> buscar todos os filmes disponíveis
   getFilmes(): Observable<Todo>{
@@ -72,11 +72,11 @@ updateFilme(id:number, todo:any): Observable<Todo>{
 }
 
 // Método delete() -> para exclur um filme
-deleteEmployee(id:number){
+deleteFilme(id:number){
   return this.http.delete<Todo>(this.apiURL + '/filmes/' + id, this.httpOptions)
   .pipe(
     retry(1),
     catchError(this.handleError)
   )
-}   
+}
 }

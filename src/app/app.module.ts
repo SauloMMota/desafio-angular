@@ -7,6 +7,8 @@ import {FilmesCreateComponent } from './components/filmes-create/filmes-create.c
 import { FilmesEditComponent } from './components/filmes-edit/filmes-edit.component';
 import { FilmesListComponent } from './components/filmes-list/filmes-list.component';
 import { FilmesHeaderComponent } from './components/filmes-header/filmes-header.component';
+//Importando o modulo Httpclient
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { FilmesHeaderComponent } from './components/filmes-header/filmes-header.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
