@@ -15,12 +15,12 @@
   </div>
 
   <div class = "input-group mb-3">
-      <label class="control-label col-sm-2" for="descricao">Enrredo:</label>
+      <label class="control-label col-sm-2" for="descricao">Enredo:</label>
       <input type = "text" id = "descricao" [(ngModel)] = "filmesData.descricao" class = "form-control" placeholder = "Informe a descrição"/>
   </div>
 
   <div class = "input-group mb-3">
-    <label class="control-label col-sm-2" for="data">Data de Lançamento:</label>
+    <label class="control-label col-sm-3" for="data">Data de Lançamento:</label>
     <input type = "date" id = "data" [(ngModel)] = "filmesData.anoLancamento" class = "form-control" placeholder = "Informe o ano de laçamento"/>
   </div>
 
@@ -36,5 +36,6 @@
 
   <div class = "input-group mb-3">
       <button class = "btn btn-success btn-md btn-block" (click) = "updateFilme()">Atualizar Registros</button>
+      <button class = "btn btn-danger btn-md btn-block" routerLink="/filmes-list">Voltar</button>
   </div>
 </div>

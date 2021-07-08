@@ -1,11 +1,11 @@
 .container-exibir {
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   height: 95vh;
 }
 
-.h1-mensagem {
+.h3-mensagem {
   font-size: 1.75 rem;
-  color: #f3f3f3;
+  color: #000000;
 }
 
 .btn-cadastro {
@@ -13,3 +13,9 @@
   background-color: #e50914;
   border-color: #e50914;
 }
+
+#btnCadastro{
+  text-align: right;
+}
+
+
