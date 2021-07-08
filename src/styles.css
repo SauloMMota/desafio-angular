@@ -40,5 +40,13 @@ button{
 h3 {
   font-family: helvetica;
   font-size: 50px;
+  color: #FFFF;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+}
+
+.container-exibir {
+  background-image: url("https://viciados.net/wp-content/uploads/2019/09/fala-universidades-netflix-3-1980x1114.jpg");
+  height: 95vh;
 }
 

@@ -5,7 +5,7 @@
 
 .h3-mensagem {
   font-size: 1.75 rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .btn-cadastro {
@@ -18,4 +18,7 @@
   text-align: right;
 }
 
+#teste {
+  color: #ffffff;
+}
 

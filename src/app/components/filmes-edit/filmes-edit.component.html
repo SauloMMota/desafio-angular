@@ -1,41 +1,43 @@
 <!-- este é o nosso componente de edição de dados -->
-<div class = "container custom-container">
-  <div class = "col-md-12">
-      <h3 class = "mb-3 text-center">Edição de Registros</h3>
-  </div>
+<div class = "container-exibir" >
+  <div class = "container custom-container">
+    <div class = "col-md-12">
+        <h3 class = "mb-3 text-center">Edição de Registros</h3>
+    </div>
 
-  <div class = "input-group mb-3">
-      <label class="control-label col-sm-2" for="titulo">Título:</label>
-      <input type = "text" id = "titulo" [(ngModel)] = "filmesData.titulo" class = "form-control" placeholder = "Informe o título"/>
-  </div>
+    <div class = "input-group mb-3">
+        <label class="control-label col-sm-2" for="titulo">Título:</label>
+        <input type = "text" id = "titulo" [(ngModel)] = "filmesData.titulo" class = "form-control" placeholder = "Informe o título"/>
+    </div>
 
-  <div class = "input-group mb-3">
-      <label class="control-label col-sm-2" for="genero">Gênero:</label>
-      <input type = "text" id ="genero" [(ngModel)] = "filmesData.genero" class = "form-control" placeholder = "Informe o gênero"/>
-  </div>
+    <div class = "input-group mb-3">
+        <label class="control-label col-sm-2" for="genero">Gênero:</label>
+        <input type = "text" id ="genero" [(ngModel)] = "filmesData.genero" class = "form-control" placeholder = "Informe o gênero"/>
+    </div>
 
-  <div class = "input-group mb-3">
-      <label class="control-label col-sm-2" for="descricao">Enredo:</label>
-      <input type = "text" id = "descricao" [(ngModel)] = "filmesData.descricao" class = "form-control" placeholder = "Informe a descrição"/>
-  </div>
+    <div class = "input-group mb-3">
+        <label class="control-label col-sm-2" for="descricao">Enredo:</label>
+        <input type = "text" id = "descricao" [(ngModel)] = "filmesData.descricao" class = "form-control" placeholder = "Informe a descrição"/>
+    </div>
 
-  <div class = "input-group mb-3">
-    <label class="control-label col-sm-3" for="data">Data de Lançamento:</label>
-    <input type = "date" id = "data" [(ngModel)] = "filmesData.anoLancamento" class = "form-control" placeholder = "Informe o ano de laçamento"/>
-  </div>
+    <div class = "input-group mb-3">
+      <label class="control-label col-sm-3" for="data">Data de Lançamento:</label>
+      <input type = "date" id = "data" [(ngModel)] = "filmesData.anoLancamento" class = "form-control" placeholder = "Informe o ano de laçamento"/>
+    </div>
 
-  <div class = "input-group mb-3">
-    <label class="control-label col-sm-2" for="diretor">Diretor:</label>
-    <input type = "text" id = "diretor" [(ngModel)] = "filmesData.diretor" class = "form-control" placeholder = "Informe o diretor"/>
-  </div>
+    <div class = "input-group mb-3">
+      <label class="control-label col-sm-2" for="diretor">Diretor:</label>
+      <input type = "text" id = "diretor" [(ngModel)] = "filmesData.diretor" class = "form-control" placeholder = "Informe o diretor"/>
+    </div>
 
-  <div class = "input-group mb-3">
-    <label class="control-label col-sm-2" for="avaliacao">Avaliação:</label>
-    <input type = "number"  min="0" max="10"  id = "avaliacao" [(ngModel)] = "filmesData.avaliacao" class = "form-control" placeholder = "Informe a avaliação"/>
-  </div>
+    <div class = "input-group mb-3">
+      <label class="control-label col-sm-2" for="avaliacao">Avaliação:</label>
+      <input type = "number"  min="0" max="10"  id = "avaliacao" [(ngModel)] = "filmesData.avaliacao" class = "form-control" placeholder = "Informe a avaliação"/>
+    </div>
 
-  <div class = "input-group mb-3">
-      <button class = "btn btn-success btn-md btn-block" (click) = "updateFilme()">Atualizar Registros</button>
-      <button class = "btn btn-danger btn-md btn-block" routerLink="/filmes-list">Voltar</button>
+    <div class = "input-group mb-3">
+        <button class = "btn btn-success btn-md btn-block" (click) = "updateFilme()">Atualizar Registros</button>
+        <button class = "btn btn-danger btn-md btn-block" routerLink="/filmes-list">Voltar</button>
+    </div>
   </div>
 </div>
